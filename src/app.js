@@ -40,7 +40,7 @@ const reviews = [
          id: 5,
          name: "Lucas Gabriel",
          job: "Student of front-end",
-         img: "#",
+         img: "https://i.pinimg.com/564x/f1/39/30/f13930c358bd98da39abaa0a51a0b1a5.jpg",
          text:
             "Hello! I'm beginner in programmation front-end and this was one project using javascript! Thanks. =)"
     
@@ -55,7 +55,7 @@ const img = document.getElementById("img");
 const author = document.getElementById("name");
 const job = document.getElementById("job");
 const text = document.getElementById("description");
-
+const random = document.getElementById("random")
 
 let currentItem = 0; //profile array number
 
@@ -96,6 +96,12 @@ const previousItem = () => {
     console.log(currentItem);
 }
 
+const randomPerson = () => {
+    currentItem = Math.floor(Math.random() * reviews.length);
+    showPerson(currentItem)
+}
+
 console.log(currentItem);
 nextBtn.addEventListener('click', nextItem);
 previousBtn.addEventListener('click', previousItem);
+random.addEventListener('click', randomPerson)
