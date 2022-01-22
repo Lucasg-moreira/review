@@ -1,0 +1,28 @@
+div#container-wrapper{
+  background-color: white;
+  margin: auto;
+  border-radius: 1em;
+  box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.597);
+  margin-top: 50px;
+  padding: 3em;
+  max-width: 30em;
+  min-height: 30em;
+}
+
+body {
+  background-color: lightblue;
+}
+
+main {
+  width: 30em;
+  height: 30em;
+  margin: auto;
+}
+img {
+  max-width: 50%;
+  border-radius: 50%;
+}
+
+div#organization {
+  
+}
